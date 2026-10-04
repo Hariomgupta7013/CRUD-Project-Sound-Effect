@@ -1,0 +1,78 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .text {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        /* Voice Control Panel */
+
+        .voice-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 280px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+
+        .voice-panel h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .control-group select,
+        .control-group input {
+            width: 100%;
+        }
+
+        .sound-toggle {
+            width: 100%;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+        }
+
+        .on {
+            background-color: green;
+        }
+
+        .off {
+            background-color: red;
+        }
+
+        .value {
+            font-weight: normal;
+        }
+
+        /*  Readable Text */
+
+        .read-text {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .read-text:hover {
+            background-color: #f1f1f1;
+        }
+    

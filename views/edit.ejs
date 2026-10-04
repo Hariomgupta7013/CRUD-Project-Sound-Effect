@@ -1,0 +1,22 @@
+<%- include("include/navBoilerPlate.ejs") %>
+
+    <body>
+        <div class="container w-50 mx-auto mt-3 mb-5">
+            <h3>
+                @<%= post.userName %>
+            </h3>
+            <p>
+                Id: <%= post.id %>
+            </p>
+            <form method="post" action="/home/<%= post.id %>/?_method=PATCH">
+                <img style="width: 38rem;" src="<%= post.image %>" alt="image"><br>
+                <div class="mt-3">
+                    <textarea name="content" type="text" class="form-control read-text" placeholder="Write you content"
+                        rows="5"><%= post.content %></textarea>
+                </div>
+                    <!-- <textarea name="content" cols="30" rows="10"><%= post.content %></textarea> -->
+                <button style="width: 100%; font-size: 1.5rem;" class="btn btn-primary mt-3">Done</button>
+            </form>
+        </div>
+
+    </body>

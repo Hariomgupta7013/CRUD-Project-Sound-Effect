@@ -1,0 +1,53 @@
+<%- include("include/navBoilerPlate.ejs") %>
+    <style>
+        .posts-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 30px auto;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .post {
+            margin-bottom: 30px;
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .delete{
+            margin-top: 10px;
+        }
+    </style>
+
+    <body>
+        <div class="posts-container">
+            <% for(post of posts) {%>
+                <div class="post">
+                    <h2 class="read-text" style="color: #7161e8">
+                        @<%= post.userName %>
+                    </h2>
+
+                    <img src="<%= post.image %>" alt="images">
+
+                    <div class="content mt-3 mb-3 read-text">
+                            <!-- Content: <%= post.content %> -->
+                            Content: <%= post.content.substring(0, 100) %>
+                    </div>
+
+                    <a href="/home/new"><button type="button" class="btn btn-primary secondary">New
+                            Post</button></a>
+                    <a href="/home/<%= post.id %>"><button type="button"
+                            class="btn btn-secondary">See
+                            in detail</button></a>
+
+                    <form method="post" action="/home/<%= post.id %>?_method=DELETE">
+                        <button class="btn delete btn-danger">delete</button>
+                    </form>
+                </div>
+
+                <% } %>
+        </div>
+    </body>
+

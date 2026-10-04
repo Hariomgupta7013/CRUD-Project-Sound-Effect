@@ -1,0 +1,30 @@
+<%- include("include/navBoilerPlate.ejs") %>
+
+
+    <body>
+        <form method="post" action="/home" class="w-50 mx-auto p-3">
+            <div class="container mt-3">
+                <div class="mb-3">
+                    <label class="form-label">Enter user name</label>
+                    <input name="userName" type="text" class="form-control" placeholder="Enter your user name">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Enter Image URL</label>
+                    <input name="image" type="text" class="form-control" placeholder="Enter image-url">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Content</label>
+                    <textarea name="content" type="text" class="form-control" placeholder="Write you content"
+                        rows="3"> </textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Done</button>
+            </div>
+
+        </form>
+
+
+
+
+    </body>

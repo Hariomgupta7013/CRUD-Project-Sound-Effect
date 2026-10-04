@@ -1,0 +1,142 @@
+nav {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.navbar-title {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-title h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.voice-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sound-toggle {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sound-toggle.on {
+    background-color: #198754;
+}
+
+.sound-toggle.off {
+    background-color: #dc3545;
+}
+
+.voice-settings-button {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    background-color: white;
+    color: #0d6efd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.voice-panel {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    z-index: 99999;
+    display: none;
+}
+
+/* Panel open hone par */
+
+.voice-panel.show {
+     display: block;
+}
+
+
+/* Heading */
+
+.voice-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.control-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.control-group input[type="range"] {
+    width: 100%;
+}
+
+.close-voice-panel {
+    width: 100%;
+    border: none;
+    padding: 9px;
+    border-radius: 6px;
+    background-color: #212529;
+    color: white;
+    cursor: pointer;
+}
+    /* Readable Text */
+.read-text {
+    cursor: pointer;
+}
+
+
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+
+    .voice-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .voice-panel {
+        width: calc(100% - 30px);
+        right: 15px;
+        top: 130px;
+    }
+
+}
