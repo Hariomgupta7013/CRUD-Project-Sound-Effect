@@ -37,7 +37,32 @@ let posts = [
         userName: "Rahul",
         content: "बे-दिली क्या यूँ ही दिन गुज़र जाएँगे, सिर्फ़ ज़िंदा रहे हम तो मर जाएँगे।",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkOWUHS1I4RTsobQ3hs92iAW6sB8KP37rjF-bPKkD9Q&s=10"
-    }
+    },
+    {
+        id: uuidv4(),
+        userName: "Raja",
+        content: "हो गया पूर्ण अज्ञात वास, पाडंव लौटे वन से सहास, पावक में कनक-सदृश तप कर, वीरत्व लिए कुछ और प्रखर, नस-नस में तेज-प्रवाह लिये, कुछ और नया उत्साह लिये। सच है, विपत्ति जब आती है,",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4W5se-3sXcI-CuvSm5GbPoSk655stnvqEeWyX1M79KA&s=10"
+    },
+        {
+        id: uuidv4(),
+        userName: "vickram",
+        content: "कायर को ही दहलाती है, शूरमा नहीं विचलित होते, क्षण एक नहीं धीरज खोते, विघ्नों को गले लगाते हैं, काँटों में राह बनाते हैं। मुख से न कभी उफ कहते हैं,",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkC1yk4XSN6RyDMG6hOrS4DMjuToJ39deiuwoPi4KhkA&s=10"
+    },
+        {
+        id: uuidv4(),
+        userName: "sonu",
+        content: "संकट का चरण न गहते हैं, जो आ पड़ता सब सहते हैं, उद्योग-निरत नित रहते हैं, शूलों का मूल नसाने को, बढ़ खुद विपत्ति पर छाने को। है कौन विघ्न ऐसा जग में,",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXz_uXJ3pWNzndxv4HtU9QZroaxEyo1AkC1iMoUHe6Uw&s=10"
+    },
+        {
+        id: uuidv4(),
+        userName: "Ganesh",
+        content: "टिक सके वीर नर के मग में खम ठोंक ठेलता है जब नर, पर्वत के जाते पाँव उखड़। मानव जब जोर लगाता है, पत्थर पानी बन जाता है। गुण बड़े एक से एक प्रखर,",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh0xz2IFyqw2rS-vba9NyWd1sBovXfN-pwo7gmZtpQA&s=10"
+    },
+    
 ];
 
 
